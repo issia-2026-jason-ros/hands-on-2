@@ -34,7 +34,7 @@ This activity involves programming an agent to be embedded in a vehicle equipped
 - Humidity sensor;
 - Luminosity sensor;
 - Potentiometer.
-- 
+  
 The sensors and actuators are accessible through ROS topics, as specified in the tables below.
 
 #### Actuators Topics

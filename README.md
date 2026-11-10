@@ -63,11 +63,11 @@ The sensors and actuators are accessible through ROS topics, as specified in the
 To check whether the hardware is working properly and become familiar with the available ROS resources, use terminal commands to inspect sensor readings and actuator status, as well as to control the actuators.
 
 First, connect to the vehicle's companion computer via SSH:
-- Host name: `<VEHICLE NAME>.bot.chon.group`
+- Host name: `kit2.bot.chon.group`
 - User name: root
 - Password: root
 
-In Unix-based systems, use `ssh root@<VEHICLE NAME>.bot.chon.group`.   
+In Unix-based systems, use `ssh root@kit2.bot.chon.group`.   
 
 To inspect sensor readings and actuator status, use:
 ```

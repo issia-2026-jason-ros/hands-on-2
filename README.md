@@ -90,15 +90,14 @@ Notes:
 #### Getting the base source code
 First of all, clone the repository from `https://github.com/issia-2026-jason-ros/hands-on-2`.
 
-This repository contains a JaCaMo application with an agent whose goal is to `exec` around the environment. However, the agent does not have any plans to achieve this goal. In this exercise, you will implement the necessary elements for the vehicle to achieve this goal.
+The folder `chon-multi-purpose-shield` contains a JaCaMo application with an agent whose goal is to `exec` around the environment. However, the agent does not have any plans to achieve this goal. In this exercise, you will implement the necessary elements for the vehicle to achieve this goal.
 
-The vehicle companion computer has a copy of this repository in the folder `~/<VEHICLE NAME>`.
+
 
 #### Running the agent
 To run a new version of the agent, you must transfer the changes to the vehicle's companion computer by following these steps:
 1. Commit and push the changes to the repository.
 2. In the vehicle's companion computer:
-   - access the application folder:  `cd ~/<VEHICLE NAME>`.
    - update the files: `git pull`.
    - run the application: `./gradlew run`.
    
@@ -115,21 +114,4 @@ In its initial version, the agent only prints the message `I do not know how to 
 Modify the agent's code, push the changes to the repository, access the vehicle's companion computer via SSH, pull the changes, run the updated version of the agent, and observe the output.
 
 ### Exercise 2.2 - Preventing collisions
-Make the vehicle move forward and stop when an obstacle is detected.
-
-### Exercise 2.3 - Implementing adaptive speed control
-Make the vehicle move forward and adjust its speed according to the distance to the detected obstacle:
-- High speed when the obstacle is at a safe distance;
-- Default speed when the obstacle is at a moderate distance;
-- Low speed when the obstacle is nearby;
-- Stop when the obstacle is at a critical distance.
-
-In addition, briefly blink the brake light for a little while (e.g. for 500 milliseconds) whenever the vehicle reduces its speed.
-
-
-### Exercise 2.4 - Implementing obstacle avoidance
-Make the vehicle navigate the environment while avoiding obstacles. Define your own navigation strategy.
-Observe the following requirements:
-- Blink the brake light whenever the vehicle reduces its speed;
-- Blink the corresponding turn signal whenever the vehicle turns left or right.
-
+Define `low`, `medium`, and `high` levels for the potentiometer values. Blink the blue light for low values. Blink the red light for medium values. Blink the red and blue lights alternately for high values.

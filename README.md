@@ -88,9 +88,9 @@ Notes:
 ###  Preliminaries
 
 #### Getting the base source code
-First of all, clone the repository from `https://github.com/issia-2026-jason-ros/<VEHICLE NAME>`. 
+First of all, clone the repository from `https://github.com/issia-2026-jason-ros/hands-on-2`.
 
-This repository contains a JaCaMo application with an agent whose goal is to `walk` around the environment. However, the agent does not have any plans to achieve this goal. In this exercise, you will implement the necessary elements for the vehicle to achieve this goal.
+This repository contains a JaCaMo application with an agent whose goal is to `exec` around the environment. However, the agent does not have any plans to achieve this goal. In this exercise, you will implement the necessary elements for the vehicle to achieve this goal.
 
 The vehicle companion computer has a copy of this repository in the folder `~/<VEHICLE NAME>`.
 
